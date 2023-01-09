@@ -1,6 +1,9 @@
 -- Please make this unique to avoid conflicts. On conflict, the last loaded pack will be used.
 local pack_name = "GoldSrc"
 
+-- nil if you don't want a custom icon
+local pack_icon = ""
+
 -- For all material types, check: https://wiki.facepunch.com/gmod/Enums/MAT
 -- There HAS to be 2 sounds listed, one for the left, and one for the right foot.
 local pack_sounds = {
@@ -58,8 +61,6 @@ local pack_sounds = {
     },
 --  [MAT_WOOD] = nil -- if you don't want a sound to play on a given surface
 }
-
-local pack_icon = "" -- nil if you don't want an icon
 
 local function custom_callback(ply, pos, foot, sound, volume, rf)
     if SERVER then
