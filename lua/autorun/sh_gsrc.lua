@@ -59,6 +59,9 @@ local pack_sounds = {
         pack_name..".GFW.Ladder.Left",
         pack_name..".GFW.Ladder.Right"
     },
+    ["falldmg"] = {
+        pack_name..".GFW.FallDmg"
+    }
 --  [MAT_WOOD] = nil -- if you don't want a sound to play on a given surface
 }
 
