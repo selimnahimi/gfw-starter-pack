@@ -11,53 +11,9 @@ local pack_sounds = {
         pack_name..".GFW.Concrete.Left",
         pack_name..".GFW.Concrete.Right"
     },
-	[MAT_CONCRETE] = {
-        pack_name..".GFW.Concrete.Left",
-        pack_name..".GFW.Concrete.Right"
-    },
-	[MAT_SNOW] = {
-        pack_name..".GFW.Concrete.Left",
-        pack_name..".GFW.Concrete.Right"
-    },
-	[MAT_DIRT] = {
-        pack_name..".GFW.Concrete.Left",
-        pack_name..".GFW.Concrete.Right"
-    },
-	[MAT_FOLIAGE] = {
-        pack_name..".GFW.Concrete.Left",
-        pack_name..".GFW.Concrete.Right"
-    },
-	[MAT_GRASS] = {
-        pack_name..".GFW.Concrete.Left",
-        pack_name..".GFW.Concrete.Right"
-    },
-	[MAT_SAND] = {
-        pack_name..".GFW.Concrete.Left",
-        pack_name..".GFW.Concrete.Right"
-    },
-    [MAT_METAL] = {
-        pack_name..".GFW.Concrete.Left",
-        pack_name..".GFW.Concrete.Right"
-    },
-    [MAT_TILE] = {
-        pack_name..".GFW.Concrete.Left",
-        pack_name..".GFW.Concrete.Right"
-    },
-    [MAT_VENT] = {
-        pack_name..".GFW.Concrete.Left",
-        pack_name..".GFW.Concrete.Right"
-    },
-    [MAT_GRATE] = {
-        pack_name..".GFW.Concrete.Left",
-        pack_name..".GFW.Concrete.Right"
-    },
     [MAT_SLOSH] = {
         pack_name..".GFW.Slosh.Left",
         pack_name..".GFW.Slosh.Right"
-    },
-    ["ladder"] = {
-        pack_name..".GFW.Ladder.Left",
-        pack_name..".GFW.Ladder.Right"
     },
     ["jump"] = {
         pack_name..".GFW.Jump"
@@ -131,28 +87,6 @@ sound.Add( {
 	level = 70,
 	sound = {
         "player/quake/null.wav"
-    }
-} )
-
-sound.Add( {
-	name = pack_name..".GFW.Ladder.Left",
-	channel = CHAN_STATIC,
-	volume = 1.0,
-	level = 70,
-	sound = {
-        "player/gsrc/footsteps/ladder1.wav",
-        "player/gsrc/footsteps/ladder2.wav"
-    }
-} )
-
-sound.Add( {
-	name = pack_name..".GFW.Ladder.Right",
-	channel = CHAN_STATIC,
-	volume = 1.0,
-	level = 70,
-	sound = {
-        "player/gsrc/footsteps/ladder3.wav",
-        "player/gsrc/footsteps/ladder4.wav"
     }
 } )
 
