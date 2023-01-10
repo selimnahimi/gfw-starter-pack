@@ -7,61 +7,65 @@ local pack_icon = ""
 -- For all material types, check: https://wiki.facepunch.com/gmod/Enums/MAT
 -- There HAS to be 2 sounds listed, one for the left, and one for the right foot.
 local pack_sounds = {
-    ["default"] = { -- Default sound if the material is unknown
-        pack_name..".GFW.Concrete.Left",
-        pack_name..".GFW.Concrete.Right"
-    },
-	[MAT_CONCRETE] = {
-        pack_name..".GFW.Concrete.Left",
-        pack_name..".GFW.Concrete.Right"
-    },
-	[MAT_SNOW] = {
-        pack_name..".GFW.Snow.Left",
-        pack_name..".GFW.Snow.Right"
-    },
-	[MAT_DIRT] = {
-        pack_name..".GFW.Dirt.Left",
-        pack_name..".GFW.Dirt.Right"
-    },
-	[MAT_FOLIAGE] = {
-        pack_name..".GFW.Dirt.Left",
-        pack_name..".GFW.Dirt.Right"
-    },
-	[MAT_GRASS] = {
-        pack_name..".GFW.Dirt.Left",
-        pack_name..".GFW.Dirt.Right"
-    },
-	[MAT_SAND] = {
-        pack_name..".GFW.Dirt.Left",
-        pack_name..".GFW.Dirt.Right"
-    },
-    [MAT_METAL] = {
-        pack_name..".GFW.Metal.Left",
-        pack_name..".GFW.Metal.Right"
-    },
-    [MAT_TILE] = {
-        pack_name..".GFW.Tile.Left",
-        pack_name..".GFW.Tile.Right"
-    },
-    [MAT_VENT] = {
-        pack_name..".GFW.Metal.Left",
-        pack_name..".GFW.Metal.Right"
-    },
-    [MAT_GRATE] = {
-        pack_name..".GFW.MetalGrate.Left",
-        pack_name..".GFW.MetalGrate.Right"
-    },
-    [MAT_SLOSH] = {
-        pack_name..".GFW.Slosh.Left",
-        pack_name..".GFW.Slosh.Right"
-    },
-    ["ladder"] = {
-        pack_name..".GFW.Ladder.Left",
-        pack_name..".GFW.Ladder.Right"
-    },
-    ["falldmg"] = {
-        pack_name..".GFW.FallDmg"
-    }
+	["materials"] = {
+		["default"] = { -- Default sound if the material is unknown
+			pack_name..".GFW.Concrete.Left",
+			pack_name..".GFW.Concrete.Right"
+		},
+		[MAT_CONCRETE] = {
+			pack_name..".GFW.Concrete.Left",
+			pack_name..".GFW.Concrete.Right"
+		},
+		[MAT_SNOW] = {
+			pack_name..".GFW.Snow.Left",
+			pack_name..".GFW.Snow.Right"
+		},
+		[MAT_DIRT] = {
+			pack_name..".GFW.Dirt.Left",
+			pack_name..".GFW.Dirt.Right"
+		},
+		[MAT_FOLIAGE] = {
+			pack_name..".GFW.Dirt.Left",
+			pack_name..".GFW.Dirt.Right"
+		},
+		[MAT_GRASS] = {
+			pack_name..".GFW.Dirt.Left",
+			pack_name..".GFW.Dirt.Right"
+		},
+		[MAT_SAND] = {
+			pack_name..".GFW.Dirt.Left",
+			pack_name..".GFW.Dirt.Right"
+		},
+		[MAT_METAL] = {
+			pack_name..".GFW.Metal.Left",
+			pack_name..".GFW.Metal.Right"
+		},
+		[MAT_TILE] = {
+			pack_name..".GFW.Tile.Left",
+			pack_name..".GFW.Tile.Right"
+		},
+		[MAT_VENT] = {
+			pack_name..".GFW.Metal.Left",
+			pack_name..".GFW.Metal.Right"
+		},
+		[MAT_GRATE] = {
+			pack_name..".GFW.MetalGrate.Left",
+			pack_name..".GFW.MetalGrate.Right"
+		},
+		[MAT_SLOSH] = {
+			pack_name..".GFW.Slosh.Left",
+			pack_name..".GFW.Slosh.Right"
+		},
+		["ladder"] = {
+			pack_name..".GFW.Ladder.Left",
+			pack_name..".GFW.Ladder.Right"
+		},
+	},
+	["GFW"] = {
+	},
+	["overrides"] = {
+		["Player.FallDamage"] = pack_name..".GFW.FallDmg",
+	}
 --  [MAT_WOOD] = nil -- if you don't want a sound to play on a given surface
 }
 
